@@ -5,13 +5,20 @@ This plugins requires gitbook `>=2.0.0`.
 
 ### Install
 
-Add this to your `book.json`, then run `gitbook install`:
+Add this to your `book.json`:
 
 ```
 {
     "plugins": ["bibtex-indexed-cite"]
+    "pluginsConfig" : {
+        "bibtex-indexed-cite" : { 
+            "path":"URL"
+            }
+    }
+
 }
 ```
+adjusting `"URL"` to reflect url of the gitbook, and then run `gitbook install`.
 
 ### Usage
 
